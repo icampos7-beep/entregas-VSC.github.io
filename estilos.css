@@ -1,0 +1,96 @@
+body{
+    margin:0;
+}
+
+header{
+    width: 100%;
+    height: 180px;
+}
+
+header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+
+/* Estilos del menu */
+
+nav {
+    background-color: rgb(110, 213, 215);
+}
+
+nav ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav > ul {
+    display:flex;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a{
+    display: block;
+    color: azure;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+background-color: rgba(127, 255, 212, 0.39);
+}
+
+/*Estilos del submenu*/
+nav li ul {
+    display:none;
+    position: absolute;
+    background-color: pink;
+    min-width: 180px;
+}
+
+nav li:hover ul{
+    display:block;
+}
+/* Estilos del pie de pagina */
+
+footer {
+    background-color: rgb(211, 72, 102);
+    color:azure;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 230px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+/*estilos para el cuerpo de la pagina*/
+section{
+    display: flex;
+    gap: 20px;
+    /*el gap es el espacio que hay entre el section y los aside*/
+    padding: 20px;
+    min-width: 350px;
+}
+
+.principal {
+    width: 70%;
+    background-color: rgb(235, 97, 175);
+    padding: 20px;
+    border: 2px solid rgb(69, 67, 67);
+}
+
+.secundario {
+    width: 30%;
+    background-color: rgb(229, 114, 255);
+    padding: 20px;
+    border: 2px solid rgb(52, 52, 52);
+}
